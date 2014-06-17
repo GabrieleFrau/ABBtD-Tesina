@@ -1,0 +1,8 @@
+\section{Configurare CMake}
+Per configurare CMake ho utilizzato due file di configurazione di cui uno richiamato solo ed esclusivamente se Doxygen è installato sulla macchina:
+Essenzialmente CMake si assicura che SFML, Thor e TGUI siano installate, modifica il file delle risorse per avere tutti i percorsi dei file utilizzati nel programma e imposta la sequenza con cui compilare il codice linkando ad esso le varie librerie
+CMakeLists.txt principale
+\verbatiminput{CMake/CMakeLists1.txt}
+Essenzialmente CMake considera quale tipo di documentazione è possibile creare utilizzando gli strumenti disponibili su computer
+CMakeLists.txt Secondario
+\verbatiminput{CMake/CMakeLists2.txt}

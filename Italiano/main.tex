@@ -1,0 +1,32 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{verbatim}
+\usepackage{listings}
+\graphicspath{ {images/} }
+\title	{
+		{Another byte bites the dust}	\\
+		{\large I.I.S. Vallauri}\\
+		{\includegraphics[scale=1.3]{vallauri.jpg}}
+}
+\author{Gabriele Frau}
+\date{\today}
+\begin{document}
+\maketitle
+\chapter*{Abstractus}
+La tesi tenta di dimostrare come, mediante l'utilizzo di vari software esterni, si possa aumentare esponenzialmente la produttività e facilitare la disponibilità del proprio software ad una maggiore fetta demografica. I prossimi capitoli frammentano i vari passi richiesti per raggiungere l'obbiettivo, considerando sia i pro che i contro di ogni software aggiunto, riscontrandoli infine in una situazione realistica tramite la creazione di un videogioco, un medium che con il passare dei decenni si è trasformato abissalmente raggiungendo le case di quasi tutto il mondo.
+
+\tableofcontents
+\chapter{Introduzione}
+\input{chapters/introduction}
+\chapter{Software e librerie esterne}
+\input{chapters/software}
+\input{chapters/libraries}
+\chapter{Il programma}
+\input{chapters/cmake}
+\input{chapters/doxygen}
+\input{chapters/project}
+\chapter{Conclusioni}
+\input{chapters/conclusions}
+\end{document}

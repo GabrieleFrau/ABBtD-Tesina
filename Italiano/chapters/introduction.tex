@@ -1,0 +1,24 @@
+Another byte bites the dust è un videogioco scritto nel linguaggio di programmazione C++ utilizzando il paradigma ad oggetti .
+L'obbiettivo del gioco è sconfiggere il giocatore avversario utilizzando varie tecniche a propria disposizione. Ogni giocatore possiede una quantità limitata di punti vita, che dovrà proteggere dagli attacchi dell'opponente.
+Il programma utilizza librerie software differenti per facilitare la "costruzione" del programma su macchine con architetture e sistemi operativi differenti.
+Le funzionalità acquisite sono le seguenti:
+\begin{itemize}
+  \item Compilazione automatica: compilazione e configurazione automatiche con un semplice comando.
+  \item Multipiattaforma: funziona su sistemi operativi basati Linux/GNU, FreeBSD, Windows, Mac OS, Android e iOS.
+  \item Documentazione automatica: la documentazione viene estratta dal codice sorgente automaticamente.
+\end{itemize}
+\section{Compilazione automatica: stop agli script chilometrici}
+Programmare un software di buona qualità richiede una grande quantità di tempo di cui la maggior parte è occupata per scovare e correggere errori, chiamata fase beta. Solitamente questi errori sono relativi ad una specifica architettura o una configurazione specifica di una macchina dell'utente finale. Potrebbe esser richiesto di ricreare una parte di programma specificamente per quell'utente/configurazione. L'accumulo di codice specifico richiede l'utilizzo di script per la compilazione del software molto complessi e proni ad errori. Per quanto sia preferibile mantenere il più possibile del software richiesto interno alla propria azienda, oggigiorno esistono diversi software specializzati in grado di proporre grande versalità con poco sforzo: meno tempo utilizzato per creare script di compilazione significa più tempo per raffinare il codice e correggere errori, ciò comporta maggiore produttività e qualità del software.
+Il software scelto per il mio progetto è CMake, il quale verrà spiegato in dettaglio nella sezione dei software esterni utilizzati.
+\section{Multipiattaforma: ieri una feature addizionale, oggi standard de facto}
+Un software di qualità ed un buon studio del tipo di clientela e le sue abitudini tecnologiche permette di concentrare gli sforzi su una specifica piattaforma. Purtroppo, per le aziende, e per fortuna, per i clienti, la situazione odierna è enormemente differente da quella di 10/20 anni fa. Con l'esplosione della tecnologia mobile il mercato ha subito un ennesima frammentazione e per quanto molta clientela resti sulla piattaforma a cui è sempre stata abituata, certi settori devono adeguarsi al cambiamento.
+Le soluzioni plausibili sono 3:
+\begin{itemize}
+\item Utilizzare un linguaggio di programmazione come Java: multipiattaforma ma con prestazioni enormemente inferiori.
+\item Avere un programma specifico per ogni piattaforma: si risolve la complicazione della piattaforma ma si crea il problema di dividere i propri programmatori riducendo la produttività generale.
+\item Astrarre le funzioni del programma dalle specifiche della piattaforma ed avere codici sorgenti diversi per ogni piattaforma: problema risolto ma resta il problema della compilazione.
+\end{itemize}
+A seconda della visione dell'azienda ogni possibilità ha i suoi pregi e difetti. Nel mio caso la scelta di astrarre le funzioni del programma è stata dettata dall'utilizzo di librerie multipiattaforma che verranno esposte più avanti. Il problema della compilazione, come già asserto nella sezione precedente, è stato risolto utilizzando Cmake.
+\section{Documentazione: la bibbia del programmatore}
+Molte volte il primo ostacolo dopo aver deciso di utilizzare un software esterno è comprenderne l'utilizzo ed adattarlo ai propri bisogni. Capita spesso che il migliore dei software abbia la peggiore delle documentazioni, il che rende il processo di integrazione lungo e tedioso, annullando i pregi iniziali del metodo seguito.
+Scrivere documentazione per i propri programmi richiede tempo e finisce per essere considerata per ultima. Doxygen cerca di risolvere il problema, il come verrà spiegato nel capitolo dei software esterni.
